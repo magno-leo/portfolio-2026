@@ -1,0 +1,12 @@
+.container-visivel-experiencia {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container-conteudo-experiencia {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  gap: 1rem;
+}

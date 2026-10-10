@@ -1,0 +1,17 @@
+.container-texto-sobre,
+.container-cards-sobre{
+    min-width: 0;
+}
+
+.container-conteudo-sobre p{
+    font-family: var(--fonte-texto);
+}
+.container-cards-sobre p{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+}
+.titulo-card.titulo-sobre{
+    color: var(--cor-texto-normal);
+    opacity: 0.7;
+}

@@ -1,0 +1,15 @@
+button-degrade-verde{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container-button-degrade{
+    position: relative;
+    background-image: var(--degrade-verde-inclinado);
+    border-radius: 10px;
+    width: 100%;
+    border: 0;
+    color: var(--cor-texto-normal);
+    font-weight: bold;
+}

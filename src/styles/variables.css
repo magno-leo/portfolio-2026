@@ -1,0 +1,21 @@
+:root{
+    --background-modo-escuro: #191414;
+    --verde-primario: #22C55E;
+    --verde-secundario: #8DFFB7;
+    --cor-texto-normal: white;
+    --degrade-verde-inclinado: linear-gradient(to bottom right, var(--verde-primario), var(--verde-secundario));
+    --degrade-verde-titulo: linear-gradient(to right, var(--verde-primario), var(--verde-secundario));
+    --font-size-title-section: 35px;
+    --color-text-background-title:rgba(255,255,255,0.1);
+    --background-hero: linear-gradient(to bottom ,#f4f4f5d3,var(--background-modo-escuro));
+    --background-hero-image: linear-gradient(to bottom ,transparent,var(--background-modo-escuro) 87%);
+    --fonte-texto:"Inter", sans-serif;
+}
+body.claro{
+    --background-hero: #F4F4F5;
+    --background-modo-escuro: #F4F4F5;
+    --cor-texto-normal: black;
+    --color-text-background-title:rgba(0,0,0,0.3);
+    --background-hero-image: linear-gradient(to bottom ,transparent,transparent,var(--background-modo-escuro) 87%);
+}
+

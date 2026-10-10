@@ -1,0 +1,49 @@
+@import url(./variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+}
+body{
+    background-color: var(--background-modo-escuro);
+    transition: all 0.4s ease;
+    color:var(--cor-texto-normal);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.titulo-card{
+    font-family: "JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.area-clicavel{
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+}
+a:visited,a:active{
+    color: var(--cor-texto-normal);
+}
+main{
+    gap:20vh;
+}
+::-webkit-scrollbar {
+  width: 12px;               
+  height: 12px;              
+  background-color: transparent; 
+}
+::-webkit-scrollbar-track {
+  background: transparent;       
+  border-radius: 10px;       
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--verde-primario); 
+  border-radius: 10px;       
+  border: 3px solid var(--verde-primario); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--verde-secundario); 
+  border: 3px solid var(--verde-secundario);
+}

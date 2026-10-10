@@ -1,0 +1,14 @@
+import './configLenis.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../styles/style.css';
+import '../components/header/header.js';
+import '../components/title-section/title_section.js';
+import '../components/hero/hero.js';
+import '../utils/carregarAnimacoes.js'
+import '../components/containerBordaAnimada/containerBordaAnimada.js'
+import '../components/buttonDegradeVerde/buttonDegradeVerde.js';
+import '../components/sobre/sobre.js';
+import '../components/contato/contato.js';
+import '../components/experiencia/experiencia.js'
+import '../components/cardExperiencia/cardExperiencia.js'

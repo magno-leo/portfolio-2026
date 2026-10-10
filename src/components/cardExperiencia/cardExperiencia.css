@@ -1,0 +1,62 @@
+card-experiencia-section{
+    display: block;
+    max-width: max-content;
+}
+
+
+.container-conteudo-card-experiencia{
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.container-skills-card-experiencia{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 100%;
+}
+.data-card-experiencia{
+    color: var(--verde-primario);
+    text-transform: uppercase;
+    font-family: var(--fonte-texto);
+    margin-bottom: 0.5em;
+    display: block;
+}
+.icone-card-experiencia{
+    width: 25%;     
+    max-width: 60px;
+    min-width: 32px;
+    height: auto;  
+    display: block;
+}
+.titulo-card-experiencia{
+    font-size: 1.2em;
+    font-family: var(--fonte-texto);
+    margin-bottom: 0.5em;
+    display: block;
+}
+.tipo-card-experiencia{
+    background-image: var(--degrade-verde-titulo);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: var(--fonte-texto);
+    margin-bottom: 0.5em;
+    padding: 1% 2%;
+    display: block;
+    text-align: center;
+}
+.skill-card-experiencia{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--verde-primario);
+    border-radius: 20px;
+    padding: 0.35rem 0.8rem;
+    color: var(--verde-primario);
+    text-align: center;
+    font-size: 0.7em;
+    white-space: nowrap;
+    max-width: 100%;
+}

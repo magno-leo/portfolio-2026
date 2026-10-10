@@ -1,0 +1,46 @@
+.container-title{
+    position: relative;
+    padding-inline: 2%;
+    display: block;
+    height: 200px;
+    width: 100vw;
+    overflow: hidden;
+}
+.first-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--degrade-verde-titulo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: var(--font-size-title-section);
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.background-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-transform: uppercase;
+    color: var(--color-text-background-title);
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    font-size: calc(var(--font-size-title-section)*2);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .first-title {
+        font-size: 25px;
+    }
+
+    .background-title {
+        font-size: 45px;
+    }
+}
