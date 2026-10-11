@@ -1,6 +1,8 @@
 .group{
-    opacity: 0.5;
+    color: var(--cor-subtitulo-cinza);
+    font-weight: bold;
     font-size: 0.7em;
+    min-height: 6%;
 }
 
 .card-skill{
@@ -13,9 +15,11 @@
     }
     .imagem-tecnologia-card{
         width: 60%;
+        max-height: 100%;
     }
     .container-logo{
         height: 40%;
+        
     }
     
     h5{

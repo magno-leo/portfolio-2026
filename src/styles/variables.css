@@ -10,6 +10,7 @@
     --background-hero: linear-gradient(to bottom ,#f4f4f5d3,var(--background-modo-escuro));
     --background-hero-image: linear-gradient(to bottom ,transparent,var(--background-modo-escuro) 87%);
     --fonte-texto:"Inter", sans-serif;
+    --cor-subtitulo-cinza: rgba(255, 255, 255, 0.5);
 }
 body.claro{
     --background-hero: #F4F4F5;
@@ -17,5 +18,6 @@ body.claro{
     --cor-texto-normal: black;
     --color-text-background-title:rgba(0,0,0,0.3);
     --background-hero-image: linear-gradient(to bottom ,transparent,transparent,var(--background-modo-escuro) 87%);
+    --cor-subtitulo-cinza: rgba(0, 0, 0, 0.7);
 }
 

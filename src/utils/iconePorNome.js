@@ -1,3 +1,5 @@
+import { fill } from "three/src/extras/TextureUtils.js";
+
 export function iconePorNome(nome,raw = false){
     let svgs;
     if(raw){
