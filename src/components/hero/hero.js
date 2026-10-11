@@ -1,8 +1,8 @@
 import './hero.css';
 import template from './hero.html?raw';
 import {animarDigitacao} from '../../utils/animacaoDigitar.js';
-import fotoPerfil from '../../assets/foto-perfil.jpeg';
-import fotolado from '../../assets/fotoperfilherolg.png';
+import fotoPerfil from '../../assets/hero/foto-perfil.jpeg';
+import fotolado from '../../assets/hero/fotoperfilherolg.png';
 class heroSection extends HTMLElement {
   connectedCallback() {
     this.innerHTML = template;

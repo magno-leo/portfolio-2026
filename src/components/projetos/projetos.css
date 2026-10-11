@@ -1,0 +1,9 @@
+.container-texto-projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    h4{
+        color: var(--verde-primario);
+    }
+}

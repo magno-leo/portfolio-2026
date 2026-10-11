@@ -1,7 +1,7 @@
 import template from './header.html?raw';
 import './header.css';
-import iconLua from'../../assets/icone-lua.png';
-import iconSol from'../../assets/icone-sol.png';
+import iconLua from'../../assets/icones/icone-lua.png';
+import iconSol from'../../assets/icones/icone-sol.png';
 class AppHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = template;

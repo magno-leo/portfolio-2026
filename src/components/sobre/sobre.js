@@ -1,6 +1,6 @@
 import './sobre.css';
 import template from './sobre.html?raw';
-import iconeMapa from '../../assets/icon-map.svg';
+import iconeMapa from '../../assets/icones/icon-map.svg';
 class sobreSection extends HTMLElement {
   connectedCallback() {
     this.innerHTML = template;

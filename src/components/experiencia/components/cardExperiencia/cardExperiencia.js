@@ -1,7 +1,7 @@
 import './cardExperiencia.css';
-import iconeCurso from '../../assets/icones/diplomado.png';
-import iconeConquista from'../../assets/icones/trofeu.png';
-import iconeTrabalho from '../../assets/icones/pasta.png';
+import iconeCurso from '../../../../assets/icones/diplomado.png';
+import iconeConquista from'../../../../assets/icones/trofeu.png';
+import iconeTrabalho from '../../../../assets/icones/pasta.png';
 class cardExperienciaSection extends HTMLElement {
   connectedCallback() {
     const texto_data = this.getAttribute('texto-data')??'';

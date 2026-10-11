@@ -1,37 +1,26 @@
 import './buttonDegradeVerde.css';
-const svgs = import.meta.glob('/src/assets/icones/*.svg', {
-  eager: true,
-  query: '?raw',
-  import: 'default',
-});
-
-const achar = (mapa, nome) =>
-  Object.entries(mapa).find(([caminho]) => caminho.includes(`/${nome}.`))?.[1];
+import {iconePorNome} from'../../utils/iconePorNome.js'
 
 class buttonDegradeVerde extends HTMLElement{
     connectedCallback(){
         const nome = this.getAttribute('icone');
         const texto = this.getAttribute('texto');
         const href = this.getAttribute('href')?? '';
+        const blank = Boolean(this.getAttribute('blank'));
+        const raw = Boolean(this.getAttribute('raw'));
         const download = this.getAttribute('download')?? '';
-        let iconeHtml = '';
-        if (nome) {
-            const svg = achar(svgs, nome);
-
-            if (svg) {
-                iconeHtml = `<span class="botao-icone">${svg}</span>`;
-            }
-        }
+        const icone =iconePorNome(nome,raw);
         const templateHtml = 
         `
-        
       <button class="container-button-degrade p-3 d-flex justify-content-center align-items-center gap-2">
-        <a class="area-clicavel" href="${href}" download="${download}"><a/>
-        ${iconeHtml}
+        <a class="area-clicavel" href="${href}" download="${download}"></a>
+        <div class="container-icone-button">
+        ${raw?icone:`<img src="${icone}">`}</div>
         <span style='color: var(--cor-texto-normal);'>${texto}</span>
       </button>`
         this.innerHTML = templateHtml;
         
+        if(blank) this.querySelector('.area-clicavel').setAttribute('target','_blank');
     };
 };
 customElements.define('button-degrade-verde', buttonDegradeVerde);

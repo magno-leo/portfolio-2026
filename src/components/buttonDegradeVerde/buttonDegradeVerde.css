@@ -13,3 +13,11 @@ button-degrade-verde{
     color: var(--cor-texto-normal);
     font-weight: bold;
 }
+.container-icone-button{
+    max-width: 2em;
+    max-height: 2em;
+}
+.container-icone-button>*{
+    width: 100%;
+    height: 100%;
+}

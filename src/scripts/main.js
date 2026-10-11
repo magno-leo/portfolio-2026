@@ -11,4 +11,5 @@ import '../components/buttonDegradeVerde/buttonDegradeVerde.js';
 import '../components/sobre/sobre.js';
 import '../components/contato/contato.js';
 import '../components/experiencia/experiencia.js'
-import '../components/cardExperiencia/cardExperiencia.js'
+import '../components/projetos/projetos.js'
+import '../components/skills/skills.js'

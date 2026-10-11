@@ -1,4 +1,4 @@
-import logoLua from '../assets/lua.png';
+import logoLua from '../assets/icones/lua.png';
 export function importarBntDarkMode(){ 
     const btn_claro_escuro = document.querySelector('.button-light-dark-mode');
     const btn_close = document.querySelector('button.btn-close');

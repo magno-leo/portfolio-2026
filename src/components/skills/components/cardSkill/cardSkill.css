@@ -1,0 +1,52 @@
+.group{
+    opacity: 0.5;
+    font-size: 0.7em;
+}
+
+.card-skill{
+    height: 100%;
+    width: 100%;
+
+    .container-icone-button{
+        height: 1.7em;
+        width: 1.7em;
+    }
+    .imagem-tecnologia-card{
+        width: 60%;
+    }
+    .container-logo{
+        height: 40%;
+    }
+    
+    h5{
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    button-degrade-verde span{
+        font-size: 0.7em;
+    }
+    .conteudo-container-borda-animada{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    button-degrade-verde{
+        margin-top: auto;
+    }
+}
+@media (max-width: 992px) {
+    .card-skill{
+        .container-icone-button{
+                display: none;
+            }
+            button-degrade-verde span{
+                white-space: nowrap;
+            }
+            button-degrade-verde{
+                max-width: 80%;
+                align-self: center;
+            }
+    }
+    
+}

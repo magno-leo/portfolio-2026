@@ -2,11 +2,11 @@ import './experiencia.css';
 import template from './experiencia.html?raw';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import './components/cardExperiencia/cardExperiencia.js'
 gsap.registerPlugin(ScrollTrigger);
 class experienciaSection extends HTMLElement {
   connectedCallback() {
     this.innerHTML = template;
-    console.log(window.innerWidth >=992)
     if(window.innerWidth >=992){
       const track = this.querySelector(".container-conteudo-experiencia");
       const visibleTrack = this.querySelector(".container-visivel-experiencia");
