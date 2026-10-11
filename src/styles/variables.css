@@ -3,6 +3,7 @@
     --verde-primario: #22C55E;
     --verde-secundario: #8DFFB7;
     --cor-texto-normal: white;
+    --cor-texto-contrario: black;
     --degrade-verde-inclinado: linear-gradient(to bottom right, var(--verde-primario), var(--verde-secundario));
     --degrade-verde-titulo: linear-gradient(to right, var(--verde-primario), var(--verde-secundario));
     --font-size-title-section: 35px;
@@ -11,13 +12,16 @@
     --background-hero-image: linear-gradient(to bottom ,transparent,var(--background-modo-escuro) 87%);
     --fonte-texto:"Inter", sans-serif;
     --cor-subtitulo-cinza: rgba(255, 255, 255, 0.5);
+    --cor-card-skill: var(--verde-primario);
 }
 body.claro{
     --background-hero: #F4F4F5;
     --background-modo-escuro: #F4F4F5;
     --cor-texto-normal: black;
+    --cor-texto-contrario: white;
     --color-text-background-title:rgba(0,0,0,0.3);
     --background-hero-image: linear-gradient(to bottom ,transparent,transparent,var(--background-modo-escuro) 87%);
     --cor-subtitulo-cinza: rgba(0, 0, 0, 0.7);
+    --cor-card-skill: black;
 }
 

@@ -1,6 +1,7 @@
 card-experiencia-section{
     display: block;
-    max-width: max-content;
+    width: max-content;
+    max-width: 800px;
 }
 
 
@@ -23,6 +24,8 @@ card-experiencia-section{
     font-family: var(--fonte-texto);
     margin-bottom: 0.5em;
     display: block;
+    width: max-content;
+
 }
 .icone-card-experiencia{
     width: 25%;     
@@ -31,6 +34,7 @@ card-experiencia-section{
     height: auto;  
     display: block;
 }
+
 .titulo-card-experiencia{
     font-size: 1.2em;
     font-family: var(--fonte-texto);
@@ -54,7 +58,7 @@ card-experiencia-section{
     border: 1px solid var(--verde-primario);
     border-radius: 20px;
     padding: 0.35rem 0.8rem;
-    color: var(--verde-primario);
+    color: var(--cor-texto-normal);
     text-align: center;
     font-size: 0.7em;
     white-space: nowrap;

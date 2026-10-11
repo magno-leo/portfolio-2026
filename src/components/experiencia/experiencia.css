@@ -8,6 +8,6 @@
   display: flex;
   width: max-content;
   will-change: transform;
-  gap: 1rem;
-  margin-inline: auto;
+  gap: 3rem;
+  align-items: center;
 }
