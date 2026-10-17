@@ -1,0 +1,104 @@
+.container-input{
+    position: relative;
+    width: 80%;
+    height: 3em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid var(--color-text-background-title);
+    transition: all 0.4s ease;
+}
+.container-input:hover,#container-text-area:hover textarea{
+    border-color: var(--cor-texto-normal);
+}
+.container-input label{
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    transition: all 0.4s ease;
+}
+.container-input input{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    color: var(--cor-texto-normal);
+    padding: 0.2em;
+    transition: all 0.4s ease;
+}
+.container-input input:focus{
+    outline: none;
+}
+.container-input .linha-bottom{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width:0;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--verde-primario);
+    transition: all 0.4s ease;
+}
+.container-input:focus-within .linha-bottom{
+    width: 100%;
+}
+.container-input:focus-within label{
+    top: 0;
+    transform: translateX(-1em);
+    color: var(--verde-primario);
+    
+}
+#container-text-area{
+    width: 80%;
+    height: auto;
+    transition: all 0.4s ease;
+    margin-bottom: 1em;
+    textarea{
+        background-color: transparent;
+        outline: none;
+        appearance: none;
+        border: 2px solid var(--color-text-background-title);
+        border-radius: 10px;
+        width: 100%;
+        color: var(--cor-texto-normal);
+        padding: 0.3em;
+        transition: all 0.4s ease;
+    }
+}
+#label-text-area{
+    transform: translateX(1em);
+    display: block;
+    margin-bottom: 1em;
+    transition: all 0.4s ease;
+}
+#container-text-area:focus-within{
+    color: var(--verde-primario);
+    textarea{
+        border: 2px solid var(--verde-primario);
+        height: 3em;
+    }
+}
+#button-submit{
+    background-color: var(--verde-primario);
+    color: var(--cor-texto-normal);
+    width: 80%;
+    border: 0;
+    border-radius: 10px;
+    padding: 0.5em;
+    transition: all 0.4s ease;
+}
+#button-submit:hover{
+    scale: 1.01;
+    color:  var(--cor-texto-contrario);
+}
+@media (max-width: 576px) {
+    #container-text-area,.container-input{
+        width: 100%;
+    }
+    #button-submit{
+        width: 90%;
+    }
+}

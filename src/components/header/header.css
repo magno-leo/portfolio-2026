@@ -1,7 +1,11 @@
 header{
     position: fixed;
-    width: 100vw;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
 }
+
 .nav-item,.nav-link,header a{
     color: var(--cor-texto-normal);
     text-decoration: none;
@@ -43,8 +47,7 @@ body.claro .nav-item:hover{
 .nav-link:hover,.nav-link:visited{
     color: var(--cor-texto-normal);
 }
-@media (min-width: 992px){
-    .container-arredondado-glassmorphism{
+.container-arredondado-glassmorphism{
         background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.04));
         backdrop-filter: blur(12px) saturate(140%);
         border: 1px solid rgba(255,255,255,.1);
@@ -53,7 +56,6 @@ body.claro .nav-item:hover{
         inset 0 1px 0 rgba(255,255,255,.25);
         border-radius: 999px;
     }
-}
 
 li.container-arredondado-glassmorphism,div.container-arredondado-glassmorphism {
     background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.04));

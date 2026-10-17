@@ -9,6 +9,8 @@ import '../utils/carregarAnimacoes.js'
 import '../components/containerBordaAnimada/containerBordaAnimada.js'
 import '../components/buttonDegradeVerde/buttonDegradeVerde.js';
 import '../components/sobre/sobre.js';
+import '../components/contato/components/formularioContato/configFirebase.js';
+import '../components/contato/components/formularioContato/formularioContato.js';
 import '../components/contato/contato.js';
 import '../components/experiencia/experiencia.js'
 import '../components/projetos/projetos.js'

@@ -3,7 +3,11 @@ card-experiencia-section{
     width: max-content;
     max-width: 800px;
 }
-
+@media (max-width:576px) {
+  card-experiencia-section{
+    max-width: 90vw;
+  }
+}
 
 .container-conteudo-card-experiencia{
     padding: 1.25rem 1.5rem;

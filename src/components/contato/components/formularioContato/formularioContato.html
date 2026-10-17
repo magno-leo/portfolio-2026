@@ -1,0 +1,22 @@
+<form method="post">
+    <div class="container-input">
+        <label for="nome">Nome</label>
+        <input required name="nome" type="text">
+        <div class="linha-bottom"></div>
+    </div>
+    <div class="container-input">
+        <label for="telefone">Telefone</label>
+        <input minlength="20" required  name="telefone" type="tel">
+        <div class="linha-bottom"></div>
+    </div>
+    <div class="container-input">
+        <label for="email">Email</label>
+        <input required name="email" type="email">
+        <div class="linha-bottom"></div>
+    </div>
+    <div id="container-text-area">
+        <label id="label-text-area" for="mensagem">Mensagem</label>
+        <textarea required name="mensagem"></textarea>
+    </div>       
+    <button id="button-submit" type="submit">Enviar</button>
+</form>

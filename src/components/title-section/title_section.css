@@ -3,7 +3,7 @@
     padding-inline: 2%;
     display: block;
     height: 200px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 .first-title{
@@ -21,6 +21,9 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     z-index: 2;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
 }
 .background-title{
     position: absolute;
@@ -33,14 +36,19 @@
     letter-spacing: 0.5em;
     font-size: calc(var(--font-size-title-section)*2);
     z-index: 1;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
 }
 
 @media (max-width: 576px) {
     .first-title {
-        font-size: 25px;
+        letter-spacing: 0.15em; 
+        font-size: 20px; 
     }
 
     .background-title {
-        font-size: 45px;
+        letter-spacing: 0.2em;
+        font-size: 36px;
     }
 }

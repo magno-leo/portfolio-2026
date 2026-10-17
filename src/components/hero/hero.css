@@ -13,16 +13,18 @@
     background-image: var(--background-hero-image);
     z-index: 3;
 }
-#nome-hero{
+#nome-hero {
     background-image: var(--degrade-verde-titulo);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    font-size: calc(var(--font-size-title-section) * 1.5);
+    font-size: clamp(24px, 8vw, 52px);
     font-weight: bold;
-    letter-spacing: 20%;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+    max-width: 100%;
+    overflow-wrap: anywhere;
 }
 #foto-perfil-hero{
     overflow: hidden;
