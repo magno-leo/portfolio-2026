@@ -64,6 +64,7 @@ class formularioContato extends HTMLElement{
         });
         const regexEmail =/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         let temporizadorValidacao;
+        let emailCorreto = false;
         inputEmail.addEventListener('input',()=>{
             const input = inputEmail.value;
             const containerInputEmail = this.querySelector('.container-input:has(input[type="email"])');
@@ -72,33 +73,45 @@ class formularioContato extends HTMLElement{
             temporizadorValidacao = setTimeout(()=>{
                 if(!regexEmail.test(input)){
                     containerInputEmail.querySelectorAll('input,label').forEach(element => {
+                        emailCorreto = false;
                         element.style.color = 'red';
                     });
                     containerInputEmail.querySelector('.linha-bottom').style.backgroundColor = 'red';
                 }else{
+                    emailCorreto = true;
                     containerInputEmail.querySelector('input').style.color = 'var(--cor-texto-normal)';
                     containerInputEmail.querySelector('label').style.color = 'var(--verde-primario)';
                     containerInputEmail.querySelector('.linha-bottom').style.backgroundColor = 'var(--verde-primario)';
                 }
             },2000);
         });
-        this.addEventListener('submit',(event)=>{
-            
+        this.addEventListener('submit',async (event)=>{
             event.preventDefault();
-            if(adicionarMensagem(inputNome.value,inputTel.value,inputEmail.value,inputMensagem.value)){
-                containersInputs.forEach(container =>{
-                    container.querySelector('input').value = '';
-                    container.querySelector('label').style ='';
-                    container.querySelector('.linha-bottom').style= '';
-                });
-                inputMensagem.style = '';
-                inputMensagem.value = '';
-                labelMensagem.style = '';
-            }else{
-                document.querySelector('#dialog-form h5').innerHTML = 'Erro no envio ❌';
+            if(emailCorreto){
+                const dados = new FormData(this.querySelector('form'));
+            
+                const enviado = await adicionarMensagem(
+                    dados.get('nome'),
+                    dados.get('telefone'),
+                    dados.get('email'),
+                    dados.get('mensagem')
+                );
+                if(enviado){
+                    containersInputs.forEach(container =>{
+                        container.querySelector('input').value = '';
+                        container.querySelector('label').style ='';
+                        container.querySelector('.linha-bottom').style= '';
+                    });
+                    inputMensagem.style = '';
+                    inputMensagem.value = '';
+                    labelMensagem.style = '';
+                }else{
+                    document.querySelector('#dialog-form h5').innerHTML = 'Erro no envio ❌';
+                }
+                document.querySelector('#dialog-form').showModal();
+                setTimeout(()=>{document.querySelector('#dialog-form').close()},3000);
             }
-            document.querySelector('#dialog-form').showModal();
-            setTimeout(()=>{document.querySelector('#dialog-form').close()},3000);
+            
             
         });
     };
