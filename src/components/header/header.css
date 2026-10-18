@@ -47,15 +47,7 @@ body.claro .nav-item:hover{
 .nav-link:hover,.nav-link:visited{
     color: var(--cor-texto-normal);
 }
-.container-arredondado-glassmorphism{
-        background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.04));
-        backdrop-filter: blur(12px) saturate(140%);
-        border: 1px solid rgba(255,255,255,.1);
-        box-shadow:
-        0 8px 32px rgba(0,0,0,.25),
-        inset 0 1px 0 rgba(255,255,255,.25);
-        border-radius: 999px;
-    }
+
 
 li.container-arredondado-glassmorphism,div.container-arredondado-glassmorphism {
     background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.04));
@@ -65,6 +57,17 @@ li.container-arredondado-glassmorphism,div.container-arredondado-glassmorphism {
       0 8px 32px rgba(0,0,0,.25),
       inset 0 1px 0 rgba(255,255,255,.25);
     border-radius: 40px;
+}
+@media (min-width:992px) {
+    ul{
+        background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.04));
+        backdrop-filter: blur(12px) saturate(140%);
+        border: 1px solid rgba(255,255,255,.1);
+        box-shadow:
+        0 8px 32px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.25);
+        border-radius: 999px;
+    }
 }
 *:has(>.link-area-clicavel){
     position: relative;
