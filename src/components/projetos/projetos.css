@@ -11,9 +11,7 @@
         height: 40%;
     }
 }
-.container-modelo-3d{
-    background-color: rebeccapurple;
-}
+
 @media (max-width:992px) {
     .container-texto-projeto{
         height: 40vh;

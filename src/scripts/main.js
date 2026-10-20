@@ -9,6 +9,7 @@ import '../utils/carregarAnimacoes.js'
 import '../components/containerBordaAnimada/containerBordaAnimada.js'
 import '../components/buttonDegradeVerde/buttonDegradeVerde.js';
 import '../components/sobre/sobre.js';
+import '../components/projetos/components/telefone/telefone.js'
 import '../components/contato/components/formularioContato/configFirebase.js';
 import '../components/contato/components/formularioContato/formularioContato.js';
 import '../components/contato/contato.js';
